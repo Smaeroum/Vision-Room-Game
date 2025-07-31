@@ -1,0 +1,22 @@
+import React from 'react';
+
+const VisionRoomGame = () => {
+  const [gameState, setGameState] = React.useState({
+    money: 1000,
+    influence: 500,
+    loyalty: 300,
+    visionScore: 0
+  });
+
+  return (
+    <div style={{ padding: 20 }}>
+      <h1>Vision Room Game</h1>
+      <p>💰 Money: {gameState.money}</p>
+      <p>🧠 Influence: {gameState.influence}</p>
+      <p>❤️ Loyalty: {gameState.loyalty}</p>
+      <p>⏱ Vision Score: {gameState.visionScore}</p>
+    </div>
+  );
+};
+
+export default VisionRoomGame;
